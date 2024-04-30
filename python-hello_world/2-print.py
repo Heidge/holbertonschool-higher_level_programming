@@ -1,2 +1,5 @@
 #!/usr/bin/python3
-print('"Programming is like building a multilingual puzzle')
+str = "Python is an interpreted, interactive, object-oriented programming\
+ language that combines remarkable power with very clear syntax"
+# YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
+print(str)
