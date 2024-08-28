@@ -117,7 +117,6 @@ guillaume@ubuntu:~/py/$ wc -l 6-concat.py
 guillaume@ubuntu:~/py/$ 
 ```
 
-
 ### 5. Copy - Cut - Paste
 
 Complete this [source code](https://github.com/hs-hq/0x00.py/blob/main/7-edges.py)
@@ -161,7 +160,6 @@ guillaume@ubuntu:~/py/$ wc -l 8-concat_edges.py
 5 8-concat_edges.py
 guillaume@ubuntu:~/py/$
 ```
-
 
 ### 7. Easter Egg
 
