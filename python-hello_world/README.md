@@ -36,6 +36,10 @@ guillaume@ubuntu:~/py/$
 ```
 :::
 
+::: tip Titre
+Texte
+:::
+
 ### 1. Print integer
 
 Complete this [source code](https://github.com/hs-hq/0x00.py/blob/main/3-print_number.py) in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
