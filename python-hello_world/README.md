@@ -21,7 +21,7 @@
 
 ## Tasks
 
-### 0. Hello, print
+::: tip 0. Hello, print
 
 Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
 
@@ -34,6 +34,7 @@ guillaume@ubuntu:~/py/$ ./2-print.py
 "Programming is like building a multilingual puzzle
 guillaume@ubuntu:~/py/$
 ```
+:::
 
 ### 1. Print integer
 
