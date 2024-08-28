@@ -21,7 +21,7 @@
 
 ## Tasks
 
-::: tip 0. Hello, print
+### 0. Hello, print
 
 Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
 
@@ -34,11 +34,7 @@ guillaume@ubuntu:~/py/$ ./2-print.py
 "Programming is like building a multilingual puzzle
 guillaume@ubuntu:~/py/$
 ```
-:::
 
-::: tip Titre
-Texte
-:::
 
 ### 1. Print integer
 
@@ -60,6 +56,7 @@ guillaume@ubuntu:~/py/0x00$ ./3-print_number.py
 guillaume@ubuntu:~/py/0x00$ 
 ```
 
+
 ### 2. Print float
 
 Complete the source code in order to print the float stored in the variable number with a precision of 2 digits.
@@ -76,6 +73,7 @@ guillaume@ubuntu:~/py/0x00$ ./4-print_float.py
 Float: 3.14
 guillaume@ubuntu:~/py/0x00$ 
 ```
+
 
 ### 3. Print string
 
@@ -99,6 +97,7 @@ Holberton
 guillaume@ubuntu:~/py/$ 
 ```
 
+
 ### 4. Play with strings
 
 Complete this [source code](https://github.com/hs-hq/0x00.py/blob/main/6-concat.py) to print Welcome to Holberton School!
@@ -117,6 +116,7 @@ guillaume@ubuntu:~/py/$ wc -l 6-concat.py
 5 6-concat.py
 guillaume@ubuntu:~/py/$ 
 ```
+
 
 ### 5. Copy - Cut - Paste
 
@@ -141,6 +141,7 @@ guillaume@ubuntu:~/py/$ wc -l 7-edges.py
 guillaume@ubuntu:~/py/$
 ```
 
+
 ### 6. Create a new sentence
 
 Complete this source code to print object-oriented programming with Python, followed by a new line.
@@ -160,6 +161,7 @@ guillaume@ubuntu:~/py/$ wc -l 8-concat_edges.py
 5 8-concat_edges.py
 guillaume@ubuntu:~/py/$
 ```
+
 
 ### 7. Easter Egg
 
