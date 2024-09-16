@@ -1,0 +1,6 @@
+# Exclure les dossiers __pycache__ générés par Python
+__pycache__/
+*.pyc
+
+# Exclure l'environnement virtuel .venv
+.venv/
