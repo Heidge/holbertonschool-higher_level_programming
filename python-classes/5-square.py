@@ -51,7 +51,7 @@ class Square():
         """Method for print a representation of the square
         """
         if self.__size == 0:
-            print("\n")
+            print("")
         else:
             for index in range(0, self.__size):
                 for index2 in range(0, self.__size):
