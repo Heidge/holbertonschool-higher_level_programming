@@ -1,9 +1,15 @@
 #!/usr/bin/python3
+"""
+Module for create a square object.
+Will contains every attributes.
+"""
 
 
 class Square():
-    
-    def __init__(self, size = 0) -> None:
+    """
+    Class for create square object
+    """
+    def __init__(self, size=0) -> None:
         if not type(size) is int:
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -12,8 +18,9 @@ class Square():
             self.__size = size
 
     def area(self):
+        """Method for retrieves the area of the square object
+
+        Returns:
+            Integer: area
+        """
         return (self.__size ** 2)
-        
-        
-    
-        
