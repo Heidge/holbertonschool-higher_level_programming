@@ -9,14 +9,16 @@ class Square():
     """
     Class for create square object
     """
+    
     def __init__(self, size=0, position=(0, 0)) -> None:
+        positive_t = all(x >= 0 for x in position)
         if not type(size) is int:
             raise TypeError("size must be an integer")
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
             self.__size = size
-        if not type(position) is tuple or len(position) != 2:
+        if not type(position) is tuple or len(position) != 2 or not positive_t:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = position
