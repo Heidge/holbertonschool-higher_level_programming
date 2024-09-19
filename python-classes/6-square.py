@@ -99,5 +99,5 @@ class Square():
                 for index3 in range(0, self.__size):
                     print("#", end="")
                     index3 += 1
-                print("")
+                print("", end="\n")
                 index += 1
