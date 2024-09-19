@@ -2,13 +2,19 @@
 
 
 class Square():
-    
+    """_summary_
+    """
     def __init__(self, size = 0, position=(0, 0)) -> None:
             self.__size = size
             self.__position = position
     
     @property
     def size(self):
+        """_summary_
+
+        Returns:
+            _type_: _description_
+        """
         return self.__size
     
     @size.setter
@@ -31,7 +37,6 @@ class Square():
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
-    
     
     def area(self):
         return (self.__size ** 2)

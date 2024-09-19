@@ -2,5 +2,7 @@
 
 
 class Square():
+    """Class for create square object
+    """
     pass
         
