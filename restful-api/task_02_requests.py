@@ -3,7 +3,7 @@ import csv
 
 def fetch_and_print_posts():
     r = requests.get('https://jsonplaceholder.typicode.com/posts')
-    print('Status code:', r.status_code)
+    print('Status Code:', r.status_code)
     if r.ok:
         r = r.json()
         for item in r:
@@ -27,3 +27,5 @@ def fetch_and_save_posts():
         for item in data:
             writer.writerow({'id': item['id'], 'title': item['title'], 
             'body': item['body']})
+
+            
