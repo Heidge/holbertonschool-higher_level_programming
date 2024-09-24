@@ -14,10 +14,11 @@ def fetch_and_print_posts():
 def fetch_and_save_posts():
     data = []
     r = requests.get('https://jsonplaceholder.typicode.com/posts')
-    r = r.json()
-    for item in r:
-        data.append(dict(id = item['id'], title = item['title'], 
-        body = item['body']))
+    if r.ok:
+        json_data = r.json()
+        for item in json_data:
+            data.append(dict(id = item['id'], title = item['title'], 
+            body = item['body']))
 
     with open('posts.csv', 'w', newline='') as csvfile:
         fieldnames = ['id', 'title', 'body']
@@ -26,4 +27,5 @@ def fetch_and_save_posts():
         for item in data:
             writer.writerow({'id': item['id'], 'title': item['title'], 
             'body': item['body']})
+
             
