@@ -19,7 +19,7 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(200)
             self.end_headers()
             self.wfile.write(b"OK")
-        elif self.path == "/infos":
+        elif self.path == "/info":
             self.send_response(200)
             self.end_headers()
             json_infos = bytes(json.dumps(INFOS), "utf-8")
@@ -27,7 +27,7 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
         elif self.path == "/":
             self.send_response(200)
             self.end_headers()
-            self.wfile.write(b"This is a simple API")
+            self.wfile.write(b"Hello, this is a simple API!")
         else:
             self.send_error(404, "Endpoint not found", None)
             self.end_headers()
