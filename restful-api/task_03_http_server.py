@@ -2,7 +2,7 @@ import http.server
 import socketserver
 import json
 
-PORT = 8086
+PORT = 8000
 DATA = {"name": "John", "age": 30, "city": "New York"}
 INFOS = {"version": "1.0", "description": "A simple API built with http.server"}
 
