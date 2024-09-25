@@ -29,8 +29,8 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(b"Hello, this is a simple API!")
         else:
-            self.send_response(404)
-            self.send_error(404, "Endpoint not found")
+            self.send_response(404, "endpoint not found")
+            self.wfile.write(b"404 Not Found")
             self.end_headers()
 
 
