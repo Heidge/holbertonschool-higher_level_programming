@@ -30,11 +30,14 @@ def username(username):
 @app.route("/add_user", methods=['POST'])
 def add_user():
     user_data = request.get_json()
-    users[user_data["username"]] = {
-        "name": user_data["name"],
-        "age": user_data["age"],
-        "city": user_data["city"]
-    }
+    if "username" not in user_data:
+         return jsonify({"error": "Username not found in the data"}), 400
+    else:     
+        users[user_data["username"]] = {
+            "name": user_data["name"],
+            "age": user_data["age"],
+            "city": user_data["city"]
+        }
 
 
     return jsonify({
