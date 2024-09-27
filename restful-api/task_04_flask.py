@@ -24,7 +24,7 @@ def username(username):
         if username in users:
             return jsonify(users[username])
         else:
-            return jsonify({"error": "User not found"})
+            return jsonify({"error": "User not found"}), 404
         
 @app.route("/add_user", methods=['POST'])
 def add_user():
