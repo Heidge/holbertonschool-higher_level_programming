@@ -7,7 +7,7 @@ users = {"jane": {"name": "Jane", "age": 28, "city": "Los Angeles"},
 
 @app.route("/")
 def home():
-    return users
+    return "Welcome to the Flask API!"
 
 @app.route("/data")
 def list_users():
