@@ -33,6 +33,7 @@ def add_user():
          return jsonify({"error": "Username is required"}), 400
     else:     
         users[user_data["username"]] = {
+            "username": user_data["username"],
             "name": user_data["name"],
             "age": user_data["age"],
             "city": user_data["city"]
