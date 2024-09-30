@@ -7,8 +7,16 @@ DATA = {"name": "John", "age": 30, "city": "New York"}
 INFOS = {"version": "1.0", "description": "A simple API built with http.server"}
 
 class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
+    """
+    Create a simple HTTP request handler
 
+    Args:
+        http (BaseHTTPRequestHandler): Parent of our class for get his methods and attributes
+    """
     def do_GET(self):
+        """
+        Function for manage routes
+        """
         if self.path == "/data":
             self.send_response(200)
             self.send_header("Content-Type", "application/json")
