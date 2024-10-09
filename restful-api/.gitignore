@@ -4,3 +4,4 @@ __pycache__/
 
 # Exclure l'environnement virtuel .venv
 .venv/
+myenv/

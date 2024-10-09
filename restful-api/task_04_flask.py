@@ -12,7 +12,7 @@ def home():
     Returns:
         string: simple welcome message for the homepage
     """
-    return "Welcome to the Flask API!"
+    return jsonify("Welcome to the Flask API!")
 
 @app.route("/data")
 def list_users():
@@ -34,7 +34,7 @@ def status():
     Returns:
         string: return an OK if API is launched 
     """
-    return "OK"
+    return jsonify("OK")
 
 @app.route("/users/<username>")
 def username(username):

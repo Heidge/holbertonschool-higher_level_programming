@@ -31,6 +31,7 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(200)
             self.end_headers()
             json_infos = bytes(json.dumps(INFOS), "utf-8")
+            #On encode en bytes car la méthode write en dessous veut du binaire
             self.wfile.write(json_infos)
         elif self.path == "/":
             self.send_response(200)
